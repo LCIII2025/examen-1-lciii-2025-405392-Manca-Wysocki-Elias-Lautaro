@@ -49,6 +49,8 @@ public class Ticket {
         if (vehiculo.getTipo().equals(AUTO)) {
             return Math.ceil((double) calcularMinutos() / 60) * 100;
         } else if (vehiculo.getTipo().equals(SUV)) {
+            System.out.println(calcularMinutos());
+
             return Math.ceil((double) calcularMinutos() / 60) * 130;
         } else if (vehiculo.getTipo().equals(PICKUP)) {
             return Math.ceil((double) calcularMinutos() / 60) * 180;
